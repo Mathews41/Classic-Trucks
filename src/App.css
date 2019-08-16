@@ -1,0 +1,10 @@
+
+.app-container {
+  width: 100vw;
+  min-height: 100vh;
+  background: rgb(252, 252, 250);
+  display: flex;
+
+
+}
+
