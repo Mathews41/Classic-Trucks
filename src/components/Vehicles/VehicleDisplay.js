@@ -81,7 +81,7 @@ export default class VehicleDisplay extends Component {
         
                  :
 
-                 (<div >
+                 (<div className= 'editvehicleinputs' >
                 <input name='editVehicleMake' placeholder = 'Edit Vehicle Make Here' onChange = {(e) => this.handleInput(e)} value = {this.state.editMake}/>
                 <input name='editVehicleModel' placeholder = 'Edit Vehicle Model Here' onChange = {(e) => this.handleInput(e)} value = {this.state.editModel}/>
                 <input name='editVehicleYear' placeholder = 'Edit Vehicle Year Here' onChange = {(e) => this.handleInput(e)} value = {this.state.editYear}/>
