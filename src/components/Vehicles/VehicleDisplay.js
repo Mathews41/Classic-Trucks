@@ -57,12 +57,13 @@ export default class VehicleDisplay extends Component {
 
     render(){
         return (
-            <div>
+            <div className="otherbox">
                 {!this.state.edit
                 ?
-                ( <div>
+                ( <div className="mainvehiclebox">
                 <div className = 'vehicle-boxes'>
                     <div className='htags'>
+                
                 <h5 className = 'vehicle-make'>{this.props.vehicle.make} </h5>
                 <h5 className = 'vehicle-model'>{this.props.vehicle.model} </h5>
                 <h5 className = 'vehicle-year'>{this.props.vehicle.year} </h5>

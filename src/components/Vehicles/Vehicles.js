@@ -59,9 +59,10 @@ export default class Vehicle extends Component {
               vehicles: res.data
           })
       })
+      this.setState({vehicleYear: ''})
       this.setState({vehicleMake: ''})
       this.setState({vehicleModel: ''})
-      this.setState({vehicleYear: ''})
+      
       this.setState({vehicleImage: ''})
 
   }
@@ -96,12 +97,13 @@ export default class Vehicle extends Component {
               </div>
               <div className = 'addvehicleinputs'>
                   <input placeholder = 'Enter Vehicle Make' onChange = {(e) => this.handleMake(e.target.value)} value = {this.state.vehicleMake}/>
-                  <input placeholder = 'Enter Vehicle Model' onChange = {(e) => this.handleModel(e.target.value)} value = {this.state.vehicleModel}/>
+                  <input placeholder = 'Enter Vehicle Model' onChange = {(e) =>
+                   this.handleModel(e.target.value)} value = {this.state.vehicleModel}/>
                   <input placeholder = 'Enter Vehicle Year' onChange = {(e) => this.handleYear(e.target.value)} value = {this.state.vehicleYear}/>
                   <input placeholder = 'Enter Image URL' onChange = {(e) => this.handleImage(e.target.value)} value = {this.state.vehicleImage}/>
                   <button onClick = {this.handleAddVehicle}>Add Vehicle</button>
               </div>
-              <div className = 'navbar'></div>
+              
               <div className = 'centerImage'></div>
 
           </div>
