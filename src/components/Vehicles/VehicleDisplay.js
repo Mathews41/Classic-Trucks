@@ -52,6 +52,9 @@ export default class VehicleDisplay extends Component {
             this.handleToggle()
             }
         })
+        .catch(error => {
+            console.log (error)
+        })
     }
 
 

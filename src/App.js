@@ -4,7 +4,7 @@ import logo from './b0966016-7112-4835-af18-838aa468b9dc_200x200.png'
 import 'reset-css'
 import './App.css'
 import Vehicles from './components/Vehicles/Vehicles'
-// import Slider from './components/Slider/Slider'
+
 
 
 
